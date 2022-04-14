@@ -1,0 +1,70 @@
+<section class="py-5">
+  <div class="text-center container">
+    <h1 class="display-5 fw-bold">Full Stack Software Engineer</h1>
+    <h3 class="lead text-light">Front-end Focused Full Stack Engineer</h3>
+
+    <div class="py-3"></div>
+
+    <img id="avatar-image" class="img-thumbnail" src="assets/AvatarMaker.svg">
+  </div>
+</section>
+
+<section class="bg-primary py-5" id="summary">
+  <div class="container text-center">
+    <h3 class="h3">Hi, I'm Garrett. Nice to meet you.</h3>
+
+    <div class="py-3"></div>
+
+    <div class="lead">
+      I've been a software engineer for a few years now, and I've learned quite a lot in that short time.
+      I started my career near the end of 2018, and since then have quickly moved up the chain to lead my own team of engineers starting in 2021.
+      Since then, I've lead multiple projects, including a migration from AngularJS to Angular using Web Components and Angular Elements.
+    </div>
+  </div>
+</section>
+
+<section class="bg-light text-dark py-5" id="projects">
+  <div class="container-fluid px-5">
+    <h3 class="h3 text-center py-3">Notable Projects/Experiences</h3>
+
+    <div class="row pt-3">
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+              <h5 class="card-title fw-bold text-center">
+                AngularJS to Angular
+              </h5>
+
+              <h5 class="lead text-center pt-3">
+                I lead a team of engineers to design a framework/process around moving from a AngularJS SPA to a hybrid SPA using Angular.
+              </h5>
+
+              <h5 class="py-3">
+                  What Steps Did I Take?
+              </h5>
+
+              <p>
+                  Documented and designed our migration strategy. I decided on a multi-step strangler pattern where new development would be done in Angular, and
+
+                  AngularJS would remain our shell and handle routing, authentication, and other high-level functionality, like navigation, system preference retrieval, etc.
+              </p>
+
+              <p>
+                Feature work in the Angular project is done in libraries, with multiple "shells." We have a shell for our new Angular application (to be completed when migration is complete) and a web component shell with needed provider overrides.
+
+                This web component shell uses Angular Elements to create a router component that handles retrieving route information from AngularJS and relaying it to Angular.
+              </p>
+
+              <p>
+                Implemented our AngularJSResourceService, which uses the existing AngularJS injector to reuse existing AngularJS services for core functionality that must be shared.
+
+                This is critical for authentication, routing, as well as utilizing massive features that aren't planned to be moved until the end of the project.
+              </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
